@@ -1,0 +1,45 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+* {
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.posts {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.post {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 5px 5px 12px 2px gray;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.post__show {
+  text-decoration: none;
+  padding: 10px;
+  background-color: #256D85;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
